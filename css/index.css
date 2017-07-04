@@ -1,0 +1,128 @@
+
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+/*面板*/
+#panel {
+    background-color: white;
+    border: 1px solid #dddddd;
+    width: 260px;
+    padding: 20px;
+    border-radius: 5px;
+    /*参数1:阴影右偏0px 2:下偏0px 3:阴影模糊范围(可选)5px 4:阴影颜色(颜色前还可以设置可选参数阴影范围大小)*/
+    box-shadow: 0 0 50px #ccc;
+    margin: 100px auto 0;
+}
+
+/*面板的头部*/
+#panel .panel-top {
+    font-size: 13px;
+    font-family: 'arial';
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/*面板的中间*/
+#panel .panel-content {
+
+}
+
+/*设置面板输入框的样式*/
+#panel .panel-content .int {
+    height: 35px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+/*设置面板中输入框的图片, 原理:让拉不了相对于父标签进行定位, 可停留在父标签的任意位置*/
+#panel .panel-content .int label {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+/*设置输入框样式*/
+#panel .panel-content .int input {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+/*当输入框获取到焦点时的样式*/
+#panel .panel-content .int input:focus {
+    /*去除默认边框*/
+    outline: none;
+    border: 0.5px solid orange;
+    box-shadow: 0 0 5px orange inset;
+}
+
+#panel .panel-content .pwd-login {
+    /*margin-bottom: 40px;*/
+}
+
+
+#panel .panel-content .pwd-login a {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    float: left;
+}
+
+/*'忘记密码?'设置到右边*/
+#panel .panel-content .pwd-login .forget-pwd {
+    float: right;
+}
+
+#panel .login button {
+    width: 100%;
+    height: 33px;
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 20px 0 10px;
+    background-color: orange;
+
+}
+
+#panel .login button:hover {
+    /*border: 0.5px solid orange;*/
+    box-shadow: 0 0 5px orange;
+}
+
+#panel .reg {
+    line-height: 30px;
+    font-size: 13px;
+    border-bottom: 1px solid #dddddd;
+}
+
+#panel .reg a {
+    color: orange;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/*面板的底部, 注意:如果是图片要项垂直居中, 一定要设置vertical-align: middle*/
+#panel .panel-bottom {
+    margin-top: 5px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+#panel .panel-bottom img {
+    width: 30px;
+    vertical-align: middle;
+}
+
